@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>辩论赛计时器WEB版</title>
+
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/frame.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic" />
+	<!-- <link rel="stylesheet" href="css/documentation.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.classycountdown.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+	<div class="timing-system">
+		<div class="container">
+			<div class="t11 t">
+				<header><h3>立论<small>正方</small></h3></header>
+				<div id="countdown11" class="ClassyCountdownDemo"></div>
+				<button class="btn" id="t11_start">正方一辩开始</button>
+				<button class="btn" id="t11_begin">开始计时</button>
+				<button class="btn" id="t11_pause">暂停计时</button>
+			</div>
+
+			<div class="t12 t" style="display:none;">
+				<header><h3>立论<small>反方</small></h3></header>
+				<div id="countdown12" class="ClassyCountdownDemo"></div>
+				<button class="btn" id="t12_start">反方一辩开始</button>
+				<button class="btn" id="t12_begin">开始计时</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="bootstrap/js/jquery.2.1.4.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.throttle.js"></script>
+    <script src="js/jquery.classycountdown.js"></script>
+    <script src="js/szpttimer.js"></script>
+  </body>
+</html>
